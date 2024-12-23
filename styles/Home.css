@@ -184,6 +184,10 @@ section{
     .main-container {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
     }
     .nav-container .links{
         display: none;
@@ -195,15 +199,9 @@ section{
     .main-container .content{
         width: 80%;
     }
-    .social-links i{
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1.5rem;
-    }
-    .main-container .image{
-        z-index: -1;
-        width: 50%;
-        height: 60%;
+    
+    .image{
+        
     }
 }
 @media (max-width:440px){
