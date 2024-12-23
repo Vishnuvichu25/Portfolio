@@ -25,18 +25,16 @@ header {
     z-index: 1000;
 }
 
-header h1 {
-    margin: 0;
-}
-
 nav {
     display: flex;
     align-items: center;
+
 }
 
 .nav-container {
     display: flex;
     align-items: center;
+    
 }
 
 .logo {
@@ -118,4 +116,9 @@ main {
     height: auto;
     border-radius: 10px;
     margin-top: 10px;
+}
+footer  {
+    display: contents;
+    text-align:  center;
+
 }
