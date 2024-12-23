@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-* {
+
+body {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-}
-
-body {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background-color: #f5f5dc;
+    background-color: black;
+    color: white;
 }
 
 header {
@@ -18,7 +14,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #8b4513;
+    background-color: #000000;
     color: #fff;
     position: fixed;
     width: 100%;
@@ -43,8 +39,8 @@ nav {
 }
 
 .logo span {
-    color: #d2691e;
-    text-shadow: 0 0 10px #d2691e;
+    color: #077b32;
+    text-shadow: 0 0 10px #077b32;
 }
 
 .links {

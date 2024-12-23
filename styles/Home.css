@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
+
 body{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  background-color: black;
+  color: white;
 }
 nav{
     width: 100%;
@@ -105,8 +101,8 @@ section{
     align-items: center;
 }
 .main-container .image{
-    width: 500px;
-    height: 80vh;
+    width: 450px;
+    height: 450px;
     border-radius: 100%;
     overflow: hidden;
     box-shadow: 0 0 50px #077b32;
@@ -115,7 +111,7 @@ section{
     width: 100%;
 }
 .main-container .image:hover{
-    animation: animate 1.5s ease-in-out infinite;
+    animation: animate 1.5s ease-in-out;
 }
 @keyframes animate {
     0%{
@@ -174,44 +170,61 @@ section{
     font-weight: 700;
     box-shadow: 0 0 40px #077b32;
 }
-@media (max-width:884px) {
+
+.download-resume{
+    margin-top: 40px;
+}
+
+.download-resume button{
+    padding: 0.5rem 2rem;
+    background-color: #077b32;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.1s linear;
+}
+
+.download-resume button:hover{
+    scale: 1.1;
+    color: #077b32;
+    border: 2px solid #077b32;
+    background-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 0 30px #077b32;
+}
+@media (max-width:600px) {
     nav .logo{
         position: absolute;
-        top: 16px;
+        top: 2.5px;
         left: 15px;
         font-size: 1.5rem;
     }
-    .main-container {
-        display: flex;
+    .main-container{
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        padding: 20px;
     }
-    .nav-container .links{
-        display: none;
+    .image{
+        width:80%;
+        max-width: 300px;
     }
-    .hamburg,
-    .cancel{
-        display: block;
-    }
-    .main-container .content{
-        width: 80%;
+    .content{
+        width: 90%;
     }
     
-    .image{
-        
-    }
 }
-@media (max-width:440px){
-    .main-container .image{
-        width: 50%;
-        height: 60%;
-        margin-bottom: 0px;
+@media (min-width: 601px) and (max-width: 1024px){
+    .main-containe{
+       flex-direction: row;
+       justify-content: space-around;
     }
-    .main-container .content{
-        width: 80%;
+    .content{
+        width: 50%;
+    }
+    .image{
+        width: 50%;
+        max-width: 400px;
     }
     .main-container button{
         margin-top: 15px;
