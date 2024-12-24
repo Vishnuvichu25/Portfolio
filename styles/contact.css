@@ -14,17 +14,6 @@ body {
     background-color: black;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #163832;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-}
 
 header h1 {
     margin: 0;
@@ -38,6 +27,8 @@ nav {
 .nav-container {
     display: flex;
     align-items: center;
+    background-color: #163832;
+    
 }
 
 .logo {
@@ -110,35 +101,38 @@ main {
     filter: drop-shadow(0 0 10px #077b32);
 }
 
-
-@media (max-width: 884px) {
-    nav .logo {
+@media (max-width:600px) {
+    nav .logo{
         position: absolute;
-        top: 16px;
+        top: 2.5px;
         left: 15px;
         font-size: 1.5rem;
     }
-
-    .nav-container .links {
-        display: none;
+    .main-container{
+        flex-direction: column;
     }
-
-    .hamburg,
-    .cancel {
-        display: block;
+    .image{
+        width:80%;
+        max-width: 300px;
     }
-
-    .social-links a {
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1.5rem;
+    .content{
+        width: 90%;
     }
+    
 }
-
-@media (max-width: 440px) {
-    .social-links a {
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1.5rem;
+@media (min-width: 601px) and (max-width: 1024px){
+    .main-containe{
+       flex-direction: row;
+       justify-content: space-around;
+    }
+    .content{
+        width: 50%;
+    }
+    .image{
+        width: 50%;
+        max-width: 400px;
+    }
+    .main-container button{
+        margin-top: 15px;
     }
 }

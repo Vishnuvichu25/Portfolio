@@ -1,17 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('Home.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
 
 body {
-    margin: 0;
-    padding: 0%;
-    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    min-height: 100vh;
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 nav {
     width: 100%;
     height: 10vh;
     position: sticky;
+    background-color: #163832;
 }
 
 .nav-container {
@@ -55,35 +66,141 @@ nav {
     color: #077b32;
 }
 
+main {
+    flex: 1;
+}
+
 section {
     width: 100%;
-    height: 90vh;
+    padding: 20px;
     color: white; /* Ensures section text is white */
 }
 
 .about h2 {
-    font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
+    font-size: clamp(1.5rem, 5rem + 10vw, 2rem);
     color: #077b32; /* Ensures the heading is white */
+    border-bottom: 2px solid white; /* Adds a white line below the heading */
+    padding-bottom: 10px;
 }
 
 .about p {
-    font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
+    font-size: clamp(1rem, 0.2rem + 9vw, 1rem);
     margin: 10px 0;
     color: white; /* Ensures paragraph text is white */
+    border-bottom: 1px solid white; /* Adds a white line below the paragraph */
+    padding-bottom: 10px;
+    letter-spacing: 1.;
 }
 
-/* Skills Section Styles */
-.Skills-container{
-display: flex;
-flex-direction: column;
-gap: 15px;
-background-color: #a567c9a1;
-padding: 1.5rem 1rem;
+/* Education and Skills Container Styles */
+.Education-and-Skills-Container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
 }
-.skill {
+
+.Education-container {
+    flex: 1;
+    border-right: 1px solid rgb(200, 15, 15); /* Adds a white line as a border on the right */
+    padding-right: 2.5px;
+}
+
+.skills-container {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+    align-items: flex-start;
+    padding-left: 20px; /* Adds padding to the left */
+}
+
+.Education-container p {
+    font-size: clamp(1rem, 0.2rem + 9vw, 1rem);
+}
+
+h3 {
+    font-size: 3rem;
+    color: #077b32;
+    border-bottom: 2px solid #fff;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.circular-progress {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: conic-gradient(
+        var(--primary-color) var(--progress),
+        #2d2f36 var(--progress)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #fff;
+    box-shadow: 0 0 10px var(--primary-color);
+    transition: width 0.3s ease-in-out;
+}
+
+.circular-progress::after {
+    content: attr(data-progress) '%';
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.circular-progress::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+/* Add Animation */
+@keyframes neonGlow {
+    0%, 100% {
+        box-shadow: 0 0 10px var(--primary-color);
+    }
+    50% {
+        box-shadow: 0 0 15px var(--primary-color);
+    }
+}
+
+.circular-progress {
+    animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+/* Custom Colors for Each Skill Level */
+#programming {
+    --primary-color: #04AA6D;
+}
+
+#Unity-development {
+    --primary-color: #03A9F4;
+}
+
+#PhotoShop {
+    --primary-color: #FF5722;
+}
+
+#problem-solving {
+    --primary-color: #8BC34A;
+}
+
+#ui-design {
+    --primary-color: #FFEB3B;
 }
 
 .skill label {
@@ -91,109 +208,30 @@ padding: 1.5rem 1rem;
     color: white; /* Ensures the label text is white */
 }
 
-.progress-bar {
-    height: 10px;
-    background: #04AA6D;
-    box-shadow: 0 0 10px #04AA6D, 0 0 20px #04AA6D;
-    transition: width 0.3s ease-in-out;
+footer {
+    text-align: center; 
+    padding: 10px 0; 
+    background-color: #163832; 
+    width: 100%; 
+    position: absolute; 
+    bottom: 0;
 }
 
-/* Add Animation */
-@keyframes expandWidth {
-    from { width: 0%; }
-    to { width: 100%; }
-}
-
-@keyframes neonGlow {
-    0%, 100% {
-        box-shadow: 0 0 10px #04AA6D, 0 0 20px #04AA6D;
-    }
-    50% {
-        box-shadow: 0 0 15px #04AA6D, 0 0 30px #04AA6D;
-    }
-}
-
-.progress-bar {
-    animation: expandWidth 2s ease-in-out, neonGlow 1.5s ease-in-out infinite alternate;
-}
-
-/* Custom Glows for Each Skill Level */
-#programming {
-    background: #04AA6D;
-    box-shadow: 0 0 5.5px #04AA6D, 0 0 2.5px #04AA6D;
-}
-
-#web-development {
-    background: #03A9F4;
-    box-shadow: 0 0 3.5px #03A9F4, 0 0 2px #03A9F4;
-}
-
-#ui-ux-design {
-    background: #FF5722;
-    box-shadow: 0 0 1.5px #FF5722, 0 0 1.2px #FF5722;
-}
-
-#project-management {
-    background: #FFEB3B;
-    box-shadow: 0 0 0.5px #FFEB3B, 0 0 2px #FFEB3B;
-}
-
-#problem-solving {
-    background: #8BC34A;
-    box-shadow: 0 0 1px #97af7c, 0 0 2.5px #8BC34A;
-}
-
-@media (max-width: 884px) {
-    nav .logo {
-        position: absolute;
-        top: 16px;
-        left: 15px;
-        font-size: 1.5rem;
-    }
-
-    .main-container {
-        display: flex;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Education-and-Skills-Container {
         flex-direction: column;
     }
-
-    .nav-container .links {
-        display: none;
+    .Education-container, .skills-container {
+        width: 100%;
+        padding: 0;
     }
-
-    .hamburg,
-    .cancel {
-        display: block;
+    .Education-container {
+        border-right: none;
+        border-bottom: 1.5px solid rgb(200, 15, 15);
+        padding-bottom: 20px;
     }
-
-    .main-container .content {
-        width: 80%;
-    }
-
-    .social-links i {
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1.5rem;
-    }
-
-    .main-container .image {
-        z-index: -1;
-        width: 50%;
-        height: 60%;
-    }
-}
-
-@media (max-width: 440px) {
-    .main-container .image {
-        width: 50%;
-        height: 60%;
-        margin-bottom: 0px;
-    }
-
-    .main-container .content {
-        width: 80%;
-    }
-
-    .main-container button {
-        margin-top: 15px;
+    h3 {
+        font-size: 2rem;
     }
 }

@@ -7,6 +7,8 @@ body{
   background-color: black;
   color: white;
 }
+
+
 nav{
     width: 100%;
     height: 10vh;
@@ -18,6 +20,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #163832;
 }
 .logo{
     color: white;
@@ -66,29 +69,7 @@ nav{
 .nav-container .links a:hover{
     color: #077b32;
 }
-.dropdown{
-    z-index: 100;
-    position: absolute;
-    top: 0;
-    transform: translateY(-500px);
-    width: 100%;
-    height: auto;
-    backdrop-filter: blur(4px) brightness(40%);
-    box-shadow:  0 0 20px black;
-    transition: 0.2s linear;
-}
-.dropdown .links a{
-    display: flex;
-    color: white;
-    text-decoration: none;
-    justify-content: center;
-    padding: 15px 0;
-    align-items: center;
-    transition: 0.2s linear;
-}
-.dropdown .links a:hover{
-    background-color: #077b32;
-}
+
 section{
     width: 100%;
     height: 90vh;
@@ -145,8 +126,12 @@ section{
     text-shadow: 0 0 10px #077b32;
 }
 .content p{
-    font-size: clamp(0.4rem , 0.2rem + 9vw, 1rem);
+    font-size: clamp(1.5rem , 0.2rem + 9vw, 1rem);
     margin: 10px 0;
+font-family: 'poppins', sans-serif;
+letter-spacing: 1px;
+
+  
 }
 
 .content button{
@@ -229,4 +214,9 @@ section{
     .main-container button{
         margin-top: 15px;
     }
+}
+footer  {
+    display: contents;
+    text-align:  center;
+    align-items: first baseline;
 }

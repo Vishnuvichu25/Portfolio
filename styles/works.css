@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('Home.css');
 
 body {
     padding: 0;
@@ -8,28 +9,15 @@ body {
     background-color: black;
     color: white;
 }
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #000000;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-}
-
 nav {
     display: flex;
     align-items: center;
-
 }
 
 .nav-container {
     display: flex;
     align-items: center;
+    background-color: #163832;
     
 }
 
@@ -92,67 +80,36 @@ main {
 
 .work-item a {
     display: inline-block;
-    color: #077b32;
+    color: #009637;
     text-decoration: none;
     font-size: 1rem;
     margin-bottom: 10px;
     border: 2px solid #08ac44;
-    padding: 5px 10px;
+    padding: 1.4px 20px;
     border-radius: 5px;
     transition: 0.3s ease;
 }
 
 .work-item a:hover {
-    background-color: #d2691e;
+    background-color: #39cd92;
     color: #fff;
+    align-self: baseline;
 }
 
 .work-item img {
-    max-width: 100%;
+    max-width: 40%;
     height: auto;
-    border-radius: 10px;
-    margin-top: 10px;
+    border-radius: 5px;
+    margin-top: 30px;
 }
 footer  {
     display: contents;
     text-align:  center;
-
+    align-items: first baseline;
 }
 
-/* for project1 style */
 
-.project-details {
-    max-width: 800px;
-    margin: 0 auto;
-}
 
-.project-banner img {
-    width: 100%;
-    border-radius: 10px;
-}
 
-.project-video {
-    text-align: center;
-    margin: 20px 0;
-}
 
-.project-description, .project-contributions, .project-details-aside {
-    margin: 20px 0;
-    background-color: #1e1e1e;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.project-details-aside h3 {
-    margin-top: 0;
-}
-
-.project-details-aside ul {
-    list-style: none;
-    padding: 0;
-}
-
-.project-details-aside ul li {
-    margin-bottom: 10px;
-}
 

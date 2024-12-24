@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('Home.css');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    background-color: #163832;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #077b32;
+    text-shadow: 0 0 10px #077b32;
+}
+
+.links {
+    display: flex;
+    margin-left: 20px;
+}
+
+.link {
+    margin: 0 10px;
+}
+
+.link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.project-details {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.project-video {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.flex-container video {
+    max-width: 100%;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.project-description, .project-contributions {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.project-description h2, .project-contributions h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #077b32;
+}
+
+.project-description p, .project-contributions ul {
+    margin: 10px 0;
+}
+
+.project-contributions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-contributions ul li {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.project-details-aside {
+    text-align: left;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.project-details-aside h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #077b32;
+}
+
+.project-details-aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-details-aside ul li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.project-details-aside ul li::before {
+    content: '•';
+    margin-right: 10px;
+    color: #077b32;
+}
+
+footer {
+    display: contents;
+    text-align: center;
+    align-items: last baseline;
+}

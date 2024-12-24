@@ -10,9 +10,9 @@
 </head>
 <body>
     <header>
-        <h1>Vishnu Narayanan</h1>
         <nav>
             <div class="nav-container">
+                <div class="logo"> Vishnu <span>Narayanan</span> </div>
                 <div class="links">
                     <div class="link"><a href="index.html">Home</a></div>
                     <div class="link"><a href="About.html">About</a></div>
@@ -25,44 +25,52 @@
     <main>
         <section class="about" id="about">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quasi commodi quia rerum, iste corporis expedita in excepturi nesciunt repellendus quisquam amet provident ad mollitia debitis odit voluptatem necessitatibus tempora.</p>
-            <!-- Skills Section -->
-            <h3>Skills</h3>
-            <div class="Skills-container">
-            <div class="skill">
-                <label for="programming">Programming</label>
-                <div class="progress-bar" id="programming" style="width: 80%;"></div>
-            </div>
-            <br>
+            <p>Highly motivated and eager to learn, I am a final year MSc Game Technology student with a strong foundation in game development principles and a keen interest in 2D game development.<br>
+             I am currently expanding my skills into 3D game development. I have a solid understanding of game development pipelines and am proficient in( Unity, C#, c++, Html).<br>
+              I am eager to contribute my skills and enthusiasm to a dynamic team and gain valuable industry experience.
+                </p>
+            <BR>
+                <br>
+                <br>
 
-            <div class="skill">
-                <label for="web-development">Web Development</label>
-                <div class="progress-bar" id="web-development" style="width: 70%;"></div>
+            <div class="Education-and-Skills-Container">
+                <div class="Education-container">
+                    <h3>Education</h3>
+                    <p>M.Sc Game Technology</p>
+                    <p>B.Sc Visual Communication</p>
+                </div>
+                <bR>
+                    
+                <!-- Skills Section -->
+                <div class="skills-container">
+                    <h3>Skills</h3>
+                    <div class="skill">
+                        <div class="circular-progress" id="programming" data-progress="70"></div>
+                        <label for="programming">Programming (C#, C++)</label>
+                    </div>
+                    <div class="skill">
+                        <div class="circular-progress" id="Unity-development" data-progress="60"></div>
+                        <label for="Unity-development">Unity 2D|3D</label>
+                    </div>
+                    <div class="skill">
+                        <div class="circular-progress" id="PhotoShop" data-progress="70"></div>
+                        <label for="PhotoShop">Photoshop</label>
+                    </div>
+                    <div class="skill">
+                        <div class="circular-progress" id="problem-solving" data-progress="60"></div>
+                        <label for="problem-solving">Problem Solving</label>
+                    </div>
+                    <div class="skill">
+                        <div class="circular-progress" id="ui-design" data-progress="40"></div>
+                        <label for="ui-design">UI-Design</label>
+                    </div>
+                </div>
             </div>
-            <br>
-
-            <div class="skill">
-                <label for="ui-ux-design">UI/UX Design</label>
-                <div class="progress-bar" id="ui-ux-design" style="width: 75%;"></div>
-            </div>
-            <br>
-
-            <div class="skill">
-                <label for="project-management">Project Management</label>
-                <div class="progress-bar" id="project-management" style="width: 85%;"></div>
-            </div>
-            <br>
-
-            <div class="skill">
-                <label for="problem-solving">Problem Solving</label>
-                <div class="progress-bar" id="problem-solving" style="width: 90%;"></div>
-            </div>
-            <br>
-        </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Vishnu Narayanan</p>
     </footer>
+    <script src="scripts/cricularprogress.js"></script>
 </body>
 </html>
