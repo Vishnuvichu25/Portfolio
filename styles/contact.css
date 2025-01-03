@@ -100,6 +100,13 @@ main {
   filter: drop-shadow(0 0 10px #077b32);
 }
 
+.social-links .email-link {
+  color: #077b32;
+}
+.social-links .email-link:hover {
+  color: #077b32;
+}
+
 /* Contact form styles */
 .contact-section {
   min-height: 100vh;
