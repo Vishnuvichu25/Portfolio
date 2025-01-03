@@ -22,6 +22,7 @@ nav {
     width: 100%;
     height: 10vh;
     position: sticky;
+    top: 0; 
     background-color: #163832;
 }
 
@@ -76,6 +77,10 @@ section {
     color: white; /* Ensures section text is white */
 }
 
+.about {
+    text-align: center; /* Center the About section */
+}
+
 .about h2 {
     font-size: clamp(1.5rem, 5rem + 10vw, 2rem);
     color: #077b32; /* Ensures the heading is white */
@@ -84,6 +89,7 @@ section {
 }
 
 .about p {
+    text-align: left; /* Align paragraph text to the left */
     font-size: clamp(1rem, 0.2rem + 9vw, 1rem);
     margin: 10px 0;
     color: white; /* Ensures paragraph text is white */
@@ -95,25 +101,26 @@ section {
 /* Education and Skills Container Styles */
 .Education-and-Skills-Container {
     display: flex;
-    justify-content: space-between;
+ flex-direction: column;
+ align-items: center;
     gap: 40px;
 }
 
 .Education-container {
     flex: 1;
-    border-right: 1px solid rgb(200, 15, 15); /* Adds a white line as a border on the right */
-    padding-right: 2.5px;
+    text-align: left;
 }
 
 .skills-container {
-    flex: 1;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
-    padding-left: 20px; /* Adds padding to the left */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;   
 }
-
+.Education-container h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
 .Education-container p {
     font-size: clamp(1rem, 0.2rem + 9vw, 1rem);
 }
@@ -146,7 +153,7 @@ h3 {
     font-size: 14px;
     color: #fff;
     box-shadow: 0 0 10px var(--primary-color);
-    transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out; 
 }
 
 .circular-progress::after {
@@ -179,7 +186,7 @@ h3 {
 }
 
 .circular-progress {
-    animation: neonGlow 1.5s ease-in-out infinite alternate;
+    animation: neonGlow 1.5s ease-in-out infinite alternate; 
 }
 
 /* Custom Colors for Each Skill Level */
@@ -220,18 +227,17 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .Education-and-Skills-Container {
-        flex-direction: column;
+        flex-direction: column; 
     }
-    .Education-container, .skills-container {
-        width: 100%;
-        padding: 0;
+
+    .Education-container,
+    .skills-container {
+        width: 100%; 
+        padding: 0; 
     }
+
     .Education-container {
-        border-right: none;
         border-bottom: 1.5px solid rgb(200, 15, 15);
         padding-bottom: 20px;
-    }
-    h3 {
-        font-size: 2rem;
     }
 }
