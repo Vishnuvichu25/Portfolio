@@ -129,12 +129,12 @@ main {
 .project-details-aside ul li {
     margin-bottom: 10px;
     display: flex;
-    justify-content: space-between;
-    color: white;
+    justify-content: start;
+    flex-direction: row;
 }
 
 .project-details-aside ul li::before {
-    content: '•';
+
     margin-right: 10px;
     color: #077b32;
 }
