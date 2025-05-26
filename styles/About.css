@@ -8,7 +8,8 @@
 }
 
 body {
-  background: linear-gradient(135deg, #000000 0%, #0b1f1a 100%);
+    background: linear-gradient(135deg, #001f3f, #003366);
+  background-attachment: fixed;
   color: #fff;
   line-height: 1.6;
 }
@@ -80,13 +81,16 @@ nav {
   margin-bottom: 40px;
 }
 
-/* Education + Skills Layout */
-.Education-and-Skills-Container {
+
+.education-and-skills-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  gap: 40px;
-  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.education-container,
+.skills-container {
+  flex: 1;
 }
 
 /* Education */
@@ -126,22 +130,22 @@ nav {
   text-align: left;
 }
 
+
 .skills-list {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 1rem;
 }
 
 .skills-list li {
   background-color: #163832;
-  padding: 10px 15px;
-  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
   color: white;
   font-size: 0.9rem;
   box-shadow: 0 0 8px #077b32;
-  font-family: 'Press Start 2P', cursive;
 }
 
 /* Responsive */

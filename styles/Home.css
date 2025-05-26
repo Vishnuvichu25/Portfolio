@@ -4,7 +4,8 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'poppins', sans-serif;
-   background: linear-gradient(135deg, #000000 0%, #0b1f1a 100%);
+  background: linear-gradient(135deg, #001f3f, #003366);
+  background-attachment: fixed;
   color: #fff;
   line-height: 1.6;
 }
