@@ -6,8 +6,9 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    background-color: black;
-    color: white;
+    background: linear-gradient(135deg, #000000 0%, #0b1f1a 100%);
+  color: #fff;
+  line-height: 1.6;
 }
 
 nav {
