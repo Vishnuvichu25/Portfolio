@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
   margin: 0;
@@ -8,9 +9,9 @@
 }
 
 body {
-    background: linear-gradient(135deg, #001f3f, #003366);
+  background-color: #0b1f1a;
   background-attachment: fixed;
-  color: #fff;
+  color: #e0f8e7;
   line-height: 1.6;
 }
 
@@ -75,29 +76,41 @@ nav {
   padding-bottom: 5px;
 }
 
+.about-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgba(7, 123, 50, 0.5);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-box:hover {
+  transform: translateY(-5px);
+}
+
 .about p {
   font-size: 1.1rem;
   text-align: justify;
   margin-bottom: 40px;
 }
 
-
+/* Education & Skills */
 .education-and-skills-container {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   margin-top: 2rem;
 }
+
 .education-container,
 .skills-container {
   flex: 1;
 }
 
 /* Education */
-.Education-container {
-  flex: 1;
-}
-.Education-container h3 {
+.education-container h3 {
   color: #077b32;
   font-size: 2rem;
   border-bottom: 2px solid white;
@@ -105,12 +118,12 @@ nav {
   text-align: left;
 }
 
-.Education-container ul {
+.education-container ul {
   list-style: none;
   padding-left: 0;
 }
 
-.Education-container li {
+.education-container li {
   font-size: 1rem;
   margin-bottom: 10px;
   border-bottom: 1px solid #fff;
@@ -118,10 +131,6 @@ nav {
 }
 
 /* Skills */
-.skills-container {
-  flex: 1;
-}
-
 .skills-container h3 {
   color: #077b32;
   font-size: 2rem;
@@ -129,7 +138,6 @@ nav {
   margin-bottom: 15px;
   text-align: left;
 }
-
 
 .skills-list {
   list-style-type: none;
@@ -148,9 +156,50 @@ nav {
   box-shadow: 0 0 8px #077b32;
 }
 
+/* Contact Section */
+.contact-box {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #077b32;
+  text-align: center;
+}
+
+.contact-box h3 {
+  font-size: 1.8rem;
+  color: #077b32;
+  margin-bottom: 10px;
+}
+
+.contact-box p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+    font-size: 32px;           
+  margin: 0 15px;            
+  color: #ffffff;           
+  transition: transform 0.2s ease, color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons i:hover {
+  transform: scale(1.2);     
+  color: #2ecc71;            /* Green accent on hover */
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
-  .Education-and-Skills-Container {
+  .education-and-skills-container {
     flex-direction: column;
     align-items: center;
   }

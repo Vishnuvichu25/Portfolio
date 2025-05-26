@@ -6,9 +6,9 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    background: linear-gradient(135deg, #001f3f, #003366);
-    background-attachment: fixed;
-  color: #fff;
+   background-attachment: fixed;
+   background-color: #0b1f1a;
+ color: #e0f8e7;
   line-height: 1.6;
 }
 
